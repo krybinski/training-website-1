@@ -1,0 +1,42 @@
+@import 'compass/reset';
+@import 'compass/css3';
+
+@include font-face("Raleway Webfont Light", font-files("raleway-light.ttf", "raleway-light.woff", "raleway-light.svg", "raleway-light.eot"), "raleway-light.eot", "300", "normal");
+@include font-face("Raleway Webfont Regular", font-files("raleway-regular.ttf", "raleway-regular.woff", "raleway-regular.svg", "raleway-regular.eot"), "raleway-regular.eot", "400", "normal");
+@include font-face("Raleway Webfont Bold", font-files("raleway-bold.ttf", "raleway-bold.woff", "raleway-bold.svg", "raleway-bold.eot"), "raleway-bold.eot", "700", "normal");
+
+/*****************************
+            Fonts
+*****************************/
+$font-light: 'Raleway Webfont Light', sans-serif;
+$font-regular: 'Raleway Webfont Regular', sans-serif;
+$font-bold: 'Raleway Webfont Bold', sans-serif;
+$main-font: $font-regular;
+
+/*****************************
+            Colors
+*****************************/
+$white: #fff;
+$black: #000;
+$turquoise: #448b83;
+$grey: #aaa;
+
+$services-bg: #ececec;
+
+/*****************************
+         Dimensions
+*****************************/
+$nav-height: 60px;
+
+/*****************************
+            Buttons
+*****************************/
+.btn-turquoise {
+    background-color: $white;
+    border: 2px solid $turquoise;
+    outline: 0;
+    font-style: italic;
+    padding: 6px 16px;
+    color: $turquoise;
+    font-size: .8em;
+}
