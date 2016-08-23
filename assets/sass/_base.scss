@@ -14,14 +14,20 @@ $font-bold: 'Raleway Webfont Bold', sans-serif;
 $main-font: $font-regular;
 
 /*****************************
+            Styles
+*****************************/
+a {
+    &:hover, &:focus, &:active { text-decoration: none; }
+}
+
+/*****************************
             Colors
 *****************************/
 $white: #fff;
 $black: #000;
 $turquoise: #448b83;
 $grey: #aaa;
-
-$services-bg: #ececec;
+$lightgrey: #ececec;
 
 /*****************************
          Dimensions

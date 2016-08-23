@@ -11985,7 +11985,7 @@ $(function() {
             if (target.length) {
                 if (width <= 767) {
                     $('html, body').animate({
-                        scrollTop: target.offset().top
+                        scrollTop: target.offset().top - 56
                     }, 1000);
                 } else {
                     $('html, body').animate({
@@ -11995,5 +11995,11 @@ $(function() {
                 return false;
             }
         }
+    });
+});
+
+$(document).ready(function() {
+    $('.nav-list li a').on('click', function() {
+        $('#bs-example-navbar-collapse-1').removeClass('in');
     });
 });
